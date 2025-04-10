@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Button Game</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f4f4f4;
+    }
+    
+
+    #gameButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+
+      background: linear-gradient(to bottom, #2894ff, #0077e6);
+      border: 2px solid #0052a3;
+      border-radius: 8px;
+      color: #fff;
+      
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      transition: background 0.2s ease-in-out;
+    }
+    
+
+    #gameButton:hover {
+      background: linear-gradient(to bottom, #31a1ff, #0082f0);
+    }
+    
+
+    #gameButton:active {
+      background: linear-gradient(to bottom, #0077e6, #2894ff);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <button id="gameButton">Click me!</button>
+  
+
+  <script src="game.js" defer></script>
+</body>
+</html>
